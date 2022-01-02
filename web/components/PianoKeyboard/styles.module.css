@@ -1,0 +1,6 @@
+.keyboard {
+  display: grid;
+  grid-auto-flow: column;
+  width: 184.94px;
+  box-shadow: 0 5px 5px -5px #333;
+}
