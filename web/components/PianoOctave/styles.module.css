@@ -25,6 +25,12 @@
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.blackKey.pressed {
+  outline: none;
+  background-color: #163c88;
+  box-shadow: none;
+}
+
 .keyCSharp {
   margin-left: 2px;
 }
@@ -59,4 +65,11 @@
   border: 1px solid #e1e1e1;
   width: 100%;
   border-radius: 0 0 3px 3px;
+}
+
+.whiteKey.pressed {
+  outline: none;
+  background-color: #2565e4;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.12),
+    3px 3px 3px 0 rgba(0, 0, 0, 0.24);
 }
