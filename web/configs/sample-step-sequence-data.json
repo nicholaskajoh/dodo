@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "description": "7-3-6-2-5-1 progression in the key of C",
+    "type": "step",
+    "instrument": {
+        "name": "piano",
+        "metadata": {
+            "key": "c",
+            "number_of_octaves": 5
+        }
+    },
+    "sequence": [
+        {
+            "position": 1,
+            "notes": [
+                {
+                    "key": "c",
+                    "octave": 3
+                },
+                {
+                    "key": "c",
+                    "octave": 4
+                },
+                {
+                    "key": "d",
+                    "octave": 4
+                },
+                {
+                    "key": "e",
+                    "octave": 4
+                },
+                {
+                    "key": "g",
+                    "octave": 4
+                }
+            ]
+        },
+        {
+            "position": 2,
+            "notes": [
+                {
+                    "key": "b",
+                    "octave": 2
+                },
+                {
+                    "key": "a",
+                    "octave": 3
+                },
+                {
+                    "key": "d",
+                    "octave": 4
+                },
+                {
+                    "key": "f",
+                    "octave": 4
+                }
+            ]
+        }
+    ]
+}

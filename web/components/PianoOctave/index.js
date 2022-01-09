@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import classNames from 'classnames';
 
 import styles from './styles.module.css';
@@ -18,7 +18,16 @@ export default function PianoOctave({ octave, notes = {} }) {
     bflat: false,
     b: false,
   };
-  const [keysPressed, setKeysPressed] = useState({ ...defaultKeysPressed, ...notes });
+  const fullNotes = { ...defaultKeysPressed, ...notes };
+  const [keysPressed, setKeysPressed] = useState(fullNotes);
+
+  useEffect(() => {
+    setKeysPressed(fullNotes);
+
+    return function cleanUp() {
+      setKeysPressed(defaultKeysPressed);
+    };
+  }, [notes]);
 
   return (
     <div className={styles.octave}>

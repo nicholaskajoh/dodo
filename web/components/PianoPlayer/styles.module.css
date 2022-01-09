@@ -1,0 +1,21 @@
+.pianoPlayer {
+  padding-top: 20px;
+}
+
+.playerStatus {
+  padding: 0;
+}
+
+.playerStatus > .statusItem {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+
+.playerControls {
+  padding: 0;
+}
+
+.playerControls > .control {
+  display: inline-block;
+  margin: 0 5px 0 5px;
+}

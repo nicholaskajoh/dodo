@@ -1,10 +1,10 @@
 import Layout from '../components/Layout';
-import PianoKeyboard from '../components/PianoKeyboard';
+import PianoPlayer from '../components/PianoPlayer';
 
 export default function Piano() {
   return (
     <Layout pageTitle="Piano">
-      <PianoKeyboard numOctaves={5} />
+      <PianoPlayer />
     </Layout>
   );
 }
